@@ -11,10 +11,10 @@ Note: For futher details, please refer to the sql file under data folder
 
 
 - Percentage of offer acceptance (No, Yes)
-| Offer accepted | %    |
-|----------------|------|
-| Yes            | 6    |
-| No             | 94   |
+| offer accepted | ratio |
+|----------------|-------|
+| Yes            | %     |
+| No             | 94%   |
 
 - Offer accepted and mailer type
 | Offer accepted | Letter | Post card |
@@ -46,7 +46,7 @@ Note: For futher details, please refer to the sql file under data folder
 | 3                  | 1.94                  |
 
 Other findings:
-- 4% accepted the offer
+- 6% accepted the offer
 - 50% of the customers are in the midium income level 
 - 76% of the customer holds 1 bank account
 - 78% of the customer owns 1 or 2 creditcards
