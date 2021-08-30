@@ -1,5 +1,5 @@
 -- 1. Create a database called credit_card_classification.
-CREATE DATABASE if not exists credit_card_classification;
+-- CREATE DATABASE if not exists credit_card_classification;
 use credit_card_classification;
 
 -- 2. Create a table credit_card_data with the same columns as given in the csv file. 
@@ -43,7 +43,7 @@ ORDER BY household_size;
 
 -- 8. Arrange the data in a decreasing order by the average_balance of the house. 
 -- Return only the customer_number of the top 10 customers with the highest average_balances in your data.
-SELECT average_balance
+SELECT customer_number, average_balance
 FROM credit_card_data
 ORDER BY average_balance DESC
 LIMIT 10;
