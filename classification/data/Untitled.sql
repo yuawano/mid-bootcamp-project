@@ -49,7 +49,7 @@ ORDER BY average_balance DESC
 LIMIT 10;
 
 SELECT * FROM (
-SELECT ROUND(average_balance), rank() over (order by average_balance desc) as ranking
+SELECT customer_number, ROUND(average_balance), rank() over (order by average_balance desc) as ranking
 FROM credit_card_data) t1
 WHERE ranking <= 10;
 
@@ -64,8 +64,6 @@ WITH cte1 as (
     )
 SELECT ROUND(AVG(avg_balance_3)) as average_balance_all
 FROM cte1;
-
--- Now, I try to update the average_balance column with the correct values <-- DO THIS LATER!!!!!!!!!!!
 
 
 -- 10. In this exercise we will use group by to check the properties of some of the categorical variables in our data. 
@@ -93,7 +91,7 @@ GROUP BY bank_accounts_open;
 -- Use an alias to change the name of the second column.
 SELECT * FROM credit_card_data;
 
-SELECT credit_rating, CAST(AVG(credit_cards_held) AS DECIMAL(10,3))
+SELECT credit_rating, CAST(AVG(credit_cards_held) AS DECIMAL(10,2))
 FROM credit_card_data
 GROUP BY credit_rating;
 
@@ -101,7 +99,7 @@ GROUP BY credit_rating;
 -- You can analyse this by grouping the data by one of the variables and then aggregating the results of the other column. 
 SELECT * FROM credit_card_data;
 
-SELECT bank_accounts_open, CAST(AVG(credit_cards_held) AS DECIMAL(10,3))
+SELECT bank_accounts_open, CAST(AVG(credit_cards_held) AS DECIMAL(10,2))
 FROM credit_card_data
 GROUP BY bank_accounts_open;
 
@@ -173,7 +171,7 @@ ORDER BY household_size ASC;
 SELECT own_your_home, count(customer_number), ROUND(count(customer_number) * 100.0/(SELECT count(*) from credit_card_data)) AS customer_percent
 FROM credit_card_data
 GROUP BY own_your_home;
--- findings: 65% os the customer owns their home
+-- findings: 65% of the customer owns their home
 
 
 -- 11. Your managers are only interested in the customers with the following properties:
