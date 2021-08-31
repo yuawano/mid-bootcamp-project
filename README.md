@@ -150,8 +150,27 @@ Customer who accepted the offer are/has:
 - holds 1 owned house
 - household size of 3 to 4 people
 
-### Modeling and evaluation
-TO BE UPDATED
+### Scaling, modeling and evaluation
+##### imbalance data metrix:
+In this studies 'smote' was implemented to balance the two classes ('Yes', 'No')
+'smote' metrix uses knn to create rows with similar features from the minority classes.
+After implementing smote, class 'Yes' was increased to 12762.
+
+##### Results from Linear Regression:
+Classification score: 0.69
+Classification report: Add screenshot of confusion metrix
+
+
+
+
+
+##### Results from KNN Classifier:
+Best k nearest neighbor value: 5
+Metrix accuracy score: 0.73
+Classification report: Add screenshot of confusion metrix
+
+In this particular studies, smote does not function well with KNN classifier.
+
 
 
 ## Libraries
