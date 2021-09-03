@@ -114,11 +114,12 @@ in order to determine significant relationship between two categorical variables
 7. Data processing and feature engineering
 - apply boxcox transformation
 - remove outliers
-8. X,y split, standardize and encoding
+8. Train/test split, standardize and encoding
 - Extract the target variable 'Offer accepted'
+- Train/test split
 - standardize the numerical variables
 - encode the categorical variables
-9. Train test slip and scaling the imbalanced data 
+9. Scaling the imbalanced data 
 - use smote metrix to fix the imbalanced data
 10. Model evaluation and results
 - Logistic regression
