@@ -1,5 +1,5 @@
 # Classification project on a imbalanced data 
-![Screenshot](classification/data/image1.jpg, width=400, height=100)
+![Screenshot](classification/data/image2.jpg)
 
 ## Objective and hypothesis
 ### Objective
@@ -178,6 +178,7 @@ In addition, customers who receives the offer invitation via postcards are more 
 
 
 ## Libraries
+- [import pandas as pd](https://pandas.pydata.org/)
 - import pandas as pd
 - import numpy as np
 - import datetime
