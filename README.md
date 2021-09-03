@@ -1,5 +1,5 @@
 # Classification project on a imbalanced data 
-![Screenshot](classification/data/image1.jpg)
+![Screenshot](classification/data/image1.jpg, width=400, height=100)
 
 ## Objective and hypothesis
 ### Objective
