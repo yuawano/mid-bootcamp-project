@@ -1,4 +1,5 @@
 # Classification project on a imbalanced data 
+![Screenshot](image1.jpg)
 
 ## Objective and hypothesis
 ### Objective
@@ -124,7 +125,7 @@ in order to determine significant relationship between two categorical variables
 - KNN Classifier
 
 
-### Analysis results from data visualization
+### Analysis from data visualization
 1. Findings in categorical columns
 - Imbalance data in target variable (column: 'offer_accepted'): 94% (No) vs 6% (Yes)
 - Almost equal distrubution on columns: reward, mailer_type, credit_rating
@@ -150,26 +151,29 @@ Customer who accepted the offer are/has:
 - holds 1 owned house
 - household size of 3 to 4 people
 
-### Scaling, modeling and evaluation
-##### imbalance data metrix:
-In this studies 'smote' was implemented to balance the two classes ('Yes', 'No')
-'smote' metrix uses knn to create rows with similar features from the minority classes.
-After implementing smote, class 'Yes' was increased to 12762.
+### Concusion 
 
-##### Results from Linear Regression:
-Classification score: 0.69
-Classification report: Add screenshot of confusion metrix
+#### Model and evaluation
+In this studies, due to the imbalanced data in the target variable,
+Smote metrix was used to fixed the imbalanced data.
+The studies implemented two different models: Linear regression, KNN Classifier
+Since the studies focuses more on obtaining more customers to take the offer rather than spotting the exact customer who will take the offer, we want to see how the result of 'recall' is.
+Below are the results of the recall score.
 
+- Linear regression: 0.62
+- KNN Classification: 0.37
 
-
-
-
-##### Results from KNN Classifier:
-Best k nearest neighbor value: 5
-Metrix accuracy score: 0.73
-Classification report: Add screenshot of confusion metrix
-
+Linear regression model has ran better than the KNN.
 In this particular studies, smote does not function well with KNN classifier.
+
+#### Analysis results
+Below are the results of the customers who are more likely to accept the credit card offerings.
+- Household_size of 3 to 4 people
+- DO NOT have overdraft protection
+- Low credit ratings
+- Holds 1 bank account
+- Holds 1 owned house
+In addition, customers who receives the offer invitation via postcards are more likely to accept the offerings..
 
 
 
