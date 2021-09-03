@@ -125,7 +125,7 @@ in order to determine significant relationship between two categorical variables
 - KNN Classifier
 
 
-### Analysis from data visualization
+### Findings from data visualization:
 1. Findings in categorical columns
 - Imbalance data in target variable (column: 'offer_accepted'): 94% (No) vs 6% (Yes)
 - Almost equal distrubution on columns: reward, mailer_type, credit_rating
@@ -151,9 +151,8 @@ Customer who accepted the offer are/has:
 - holds 1 owned house
 - household size of 3 to 4 people
 
-### Conclusion 
-
-#### Model and evaluation
+## Conclusion 
+### Model and evaluation:
 In this studies, due to the imbalanced data in the target variable,
 Smote metrix was used to fixed the imbalanced data.
 The studies implemented two different models: Linear regression, KNN Classifier
@@ -166,7 +165,7 @@ Below are the results of the recall score.
 Linear regression model has ran better than the KNN.
 In this particular studies, smote does not function well with KNN classifier.
 
-#### Analysis results
+### Analysis results:
 Below are the results of the customers who are more likely to accept the credit card offerings.
 - Household_size of 3 to 4 people
 - DO NOT have overdraft protection
@@ -179,20 +178,18 @@ In addition, customers who receives the offer invitation via postcards are more 
 
 ## Libraries
 - [import pandas as pd](https://pandas.pydata.org/)
-- import pandas as pd
-- import numpy as np
-- import datetime
-- import warnings
-- import matplotlib.pyplot as plt
-- import seaborn as sns
-- from scipy.stats import chi2_contingency
-- import scipy.stats as stats
-- from imblearn.over_sampling import SMOTE
-- from sklearn.model_selection import train_test_split
-- from sklearn.linear_model import LogisticRegression
-- from sklearn.metrics import confusion_matrix
-- from sklearn.preprocessing import StandardScaler
-- from sklearn.neighbors import KNeighborsClassifier
-- from sklearn import metrics
-- from sklearn.preprocessing import OneHotEncoder
-- from sklearn.metrics import classification_report
+- [import numpy as np](https://numpy.org/)
+- [import warnings](https://docs.python.org/3/library/warnings.html)
+- [import matplotlib.pyplot as plt](https://matplotlib.org/stable/contents.html)
+- [import seaborn as sns](https://seaborn.pydata.org/)
+- [from scipy.stats import chi2_contingency](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html)
+- [import scipy.stats as stats](https://docs.scipy.org/doc/scipy/reference/stats.html)
+- [from imblearn.over_sampling import SMOTE](https://imbalanced-learn.org/stable/)
+- [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+- [from sklearn.linear_model import LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html)
+- [from sklearn.metrics import confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+- [from sklearn.preprocessing import StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+- [from sklearn.neighbors import KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+- [from sklearn import metrics](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
+- [from sklearn.preprocessing import OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
+- [from sklearn.metrics import classification_report](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)
