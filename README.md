@@ -1,5 +1,5 @@
 # Classification project on a imbalanced data 
-![Screenshot](image1.jpg)
+![Screenshot](classification/data/image1.jpg)
 
 ## Objective and hypothesis
 ### Objective
@@ -151,7 +151,7 @@ Customer who accepted the offer are/has:
 - holds 1 owned house
 - household size of 3 to 4 people
 
-### Concusion 
+### Conclusion 
 
 #### Model and evaluation
 In this studies, due to the imbalanced data in the target variable,
@@ -178,20 +178,20 @@ In addition, customers who receives the offer invitation via postcards are more 
 
 
 ## Libraries
-import pandas as pd
-import numpy as np
-import datetime
-import warnings
-import matplotlib.pyplot as plt
-import seaborn as sns
-from scipy.stats import chi2_contingency
-import scipy.stats as stats
-from imblearn.over_sampling import SMOTE
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix
-from sklearn.preprocessing import StandardScaler
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn import metrics
-from sklearn.preprocessing import OneHotEncoder
-from sklearn.metrics import classification_report
+- import pandas as pd
+- import numpy as np
+- import datetime
+- import warnings
+- import matplotlib.pyplot as plt
+- import seaborn as sns
+- from scipy.stats import chi2_contingency
+- import scipy.stats as stats
+- from imblearn.over_sampling import SMOTE
+- from sklearn.model_selection import train_test_split
+- from sklearn.linear_model import LogisticRegression
+- from sklearn.metrics import confusion_matrix
+- from sklearn.preprocessing import StandardScaler
+- from sklearn.neighbors import KNeighborsClassifier
+- from sklearn import metrics
+- from sklearn.preprocessing import OneHotEncoder
+- from sklearn.metrics import classification_report
