@@ -54,7 +54,7 @@ Note: For futher details, please refer to the sql file under data folder
 
 | offer accepted | ratio |
 |----------------|-------|
-| Yes            | %     |
+| Yes            | 6%    |
 | No             | 94%   |
 
 - Offer accepted and mailer type
