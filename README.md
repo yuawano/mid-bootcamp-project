@@ -2,8 +2,16 @@
 ![Screenshot](classification/data/image2.jpg)
 
 ## Objective and hypothesis
-### Objective
-Learn how to clean the data, apply the statistical techniques (SQL) and visulizations (Tableau), apply logistic regression on a imbalanced data to find the best model for predicting whether the customer will accept the credit card offer or not.
+### Background
+The bank also provides credit card services which is a very important source of revenue for the bank. The bank wants to understand the demographics and other characteristics of its customers that accept a credit card offer and that do not accept a credit card. The bank designs a focused marketing study, with 18,000 current bank customers. This focused approach allows the bank to know who does and does not respond to the offer, and to use existing demographic data that is already available on each customer.
+
+### Objective 
+Learn how to clean the data, apply the statistical techniques and visulizations, apply logistic regression on a imbalanced data to find the best model for predicting why some bank customers accept credit card offers. 
+In this studies, below programs are used to solve the problem.
+
+- SQL
+- Python
+- Tableau
 
 ### Hypothesis
 Customers with below requirements have higher chances to accept the offer
@@ -178,19 +186,19 @@ In addition, customers who receives the offer invitation via postcards are more 
 
 
 ## Libraries
-- [import pandas as pd](https://pandas.pydata.org/)
-- [import numpy as np](https://numpy.org/)
-- [import warnings](https://docs.python.org/3/library/warnings.html)
-- [import matplotlib.pyplot as plt](https://matplotlib.org/stable/contents.html)
-- [import seaborn as sns](https://seaborn.pydata.org/)
-- [from scipy.stats import chi2_contingency](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html)
-- [import scipy.stats as stats](https://docs.scipy.org/doc/scipy/reference/stats.html)
-- [from imblearn.over_sampling import SMOTE](https://imbalanced-learn.org/stable/)
-- [from sklearn.model_selection import train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
-- [from sklearn.linear_model import LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html)
-- [from sklearn.metrics import confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
-- [from sklearn.preprocessing import StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
-- [from sklearn.neighbors import KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
-- [from sklearn import metrics](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
-- [from sklearn.preprocessing import OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
-- [from sklearn.metrics import classification_report](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)
+- [pandas](https://pandas.pydata.org/)
+- [numpy](https://numpy.org/)
+- [warnings](https://docs.python.org/3/library/warnings.html)
+- [matplotlib.pyplot](https://matplotlib.org/stable/contents.html)
+- [seaborn](https://seaborn.pydata.org/)
+- [scipy.stats chi2_contingency](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html)
+- [scipy.stats stats](https://docs.scipy.org/doc/scipy/reference/stats.html)
+- [imblearn.over_sampling SMOTE](https://imbalanced-learn.org/stable/)
+- [sklearn.model_selection train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+- [sklearn.linear_model LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html)
+- [sklearn.metrics confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
+- [sklearn.preprocessing StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+- [sklearn.neighbors KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+- [sklearn metrics](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
+- [sklearn.preprocessing OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
+- [sklearn.metrics classification_report](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)
