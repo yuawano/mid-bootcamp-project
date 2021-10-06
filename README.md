@@ -39,103 +39,26 @@ The features consisted as follows:
 - Average Balance: Average account balance (across all accounts over time). Q1, Q2, Q3 and Q4
 - Balance: Average balance for each quarter in the last year
 
-## Exploring the data in SQL
-Note: For futher details, please refer to the sql file under data folder
-
-- Percentage of offer acceptance (No, Yes)
-
-| offer accepted | ratio |
-|----------------|-------|
-| Yes            | 6%    |
-| No             | 94%   |
-
-- Offer accepted and mailer type
-
-| Offer accepted | Letter | Post card |
-|----------------|--------|-----------|
-| Yes            | 2%     | 4%        |
-| No             | 48%    | 47%       |
-
-- Average balance of all customers: 984
-
-- Average balance per income level
-
-| income level | Avg_bal     |
-|--------------|-------------|
-| High         | 943         |
-| Medium       | 941         |
-| Low          | 938         |
-
-- Average number of credit cards held per credit rating
-
-| credit rating | Avg_count |
-|---------------|-----------|
-| High          | 1.90      |
-| Medium        | 1.91      |
-| Low           | 1.90      |
-
-- Average number of credit cards held per open bank accounts
-
-| Bank accounts open | avg credit cards held |
-|--------------------|-----------------------|
-| 1                  | 1.90                  |
-| 2                  | 1.90                  |
-| 3                  | 1.94                  |
-
-Other findings:
-- 6% accepted the offer
-- 50% of the customers are in the midium income level 
-- 76% of the customer holds 1 bank account
-- 78% of the customer owns 1 or 2 creditcards
-- 80% of the customers owns 1 house
-- 60% of the customers has 3 to 4 household size. 30% of the customers has 2 or 5 household size.
-- 65% of the customer owns their home
-- Within the customers who accepted the offer, postcard invitation has slighly high chances to get offer accepted
-- 4% accepted the offer
+## Exploring the data in SQL 
+Refer to the 'credit_card_data.sql' under SQL folder.
 
 ## Data exploration and modeling in python
 ### Procedures:
-Please refer to the jupyternote book.
+Refer to '2_data_visualization.ipynb'.
 
-### Findings from data visualization:
-1. Findings in categorical columns
-- Imbalance data in target variable (column: 'offer_accepted'): 94% (No) vs 6% (Yes)
-- Almost equal distrubution on columns: reward, mailer_type, credit_rating
-- 50% of the customers are belonging to medium income_level
-- 85% of customer have overdraft_protection
-- 65% of the customer owns a home
-
-2. Findings in numerical columns
-- 76% of the customer owns 1 bank account
-- 81% of the customer owns their home
-- Average_blanace and q1_balance is skewed to the left
-
-3. Findings in correlation between offer accepted and each features
-
-Customer who accepted the offer are/has:
-- Air Miles as rewards
-- received credit card offerings in postcard
-- do not have overdraft protection
-- low credit ratings
-- owns a home
-- mostly have 1 bank account open
-- holds 2 credit cards
-- holds 1 owned house
-- household size of 3 to 4 people
 
 ## Conclusion 
 ### Model and evaluation:
-In this studies, due to the imbalanced data in the target variable,
-Smote metrix was used to fixed the imbalanced data.
-The studies implemented two different models: Logistic regression, KNN Classifier
-Since the studies focuses more on obtaining more customers to take the offer rather than spotting the exact customer who will take the offer, we want to see how the result of 'recall' is.
-Below are the results of the recall score.
+In this studies, smote metrix was used to fixed the imbalanced data.
+The studies implemented two different models: Logistic regression and KNN Classifier.
+Since the studies focuses more on obtaining more customers to take the offer rather than spotting the exact customer who will take the offer the score of 'recall' is on focus.
+Below are the results of the recall.
 
 - Logistic regression: 0.62
 - KNN Classification: 0.37
 
 Logistic regression model has ran better than the KNN.
-In this particular studies, smote does not function well with KNN classifier.
+In this particular studies, smote metrix did not function well with KNN classifier.
 
 ### Analysis results:
 Below are the results of the customers who are more likely to accept the credit card offerings.
@@ -144,8 +67,8 @@ Below are the results of the customers who are more likely to accept the credit 
 - Low credit ratings
 - Holds 1 bank account
 - Holds 1 owned house
-In addition, customers who receives the offer invitation via postcards are more likely to accept the offerings..
-
+In addition, customers who receives the offer invitation via postcards are more likely to accept the offerings.
+For further information, refer to '2_data_visualization.ipynb'.
 
 
 ## Libraries
