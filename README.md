@@ -127,14 +127,14 @@ Customer who accepted the offer are/has:
 ### Model and evaluation:
 In this studies, due to the imbalanced data in the target variable,
 Smote metrix was used to fixed the imbalanced data.
-The studies implemented two different models: Linear regression, KNN Classifier
+The studies implemented two different models: Logistic regression, KNN Classifier
 Since the studies focuses more on obtaining more customers to take the offer rather than spotting the exact customer who will take the offer, we want to see how the result of 'recall' is.
 Below are the results of the recall score.
 
-- Linear regression: 0.62
+- Logistic regression: 0.62
 - KNN Classification: 0.37
 
-Linear regression model has ran better than the KNN.
+Logistic regression model has ran better than the KNN.
 In this particular studies, smote does not function well with KNN classifier.
 
 ### Analysis results:
