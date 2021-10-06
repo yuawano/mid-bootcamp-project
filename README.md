@@ -40,14 +40,6 @@ The features consisted as follows:
 - Balance: Average balance for each quarter in the last year
 
 ## Exploring the data in SQL
-### Procedures:
-1. import csv file ('creditcardmarketing.csv') into Jupyter notebook
-2. standardize the column (change to lower case, remove symbols '#')
-3. save the dataframe as new file ('credit_card_data.csv', 'credit_card_data.xls')
-4. import into workbench via import wizard
-Note: Above procedure was taken due to some errors in importing the file directly into workbench.
-
-### Data explorations (high level summary)
 Note: For futher details, please refer to the sql file under data folder
 
 - Percentage of offer acceptance (No, Yes)
@@ -103,36 +95,7 @@ Other findings:
 
 ## Data exploration and modeling in python
 ### Procedures:
-1. import libraries
-2. load the data ('credit_card_data')
-3. Analysis in SQL (details above 'Exploring the data in SQL')
-4. data exploration and cleaning
-- Understand the features:
-- Deal with duplicates, NaN values
-- Deal with categorical and numerical variables and convert if necesssary
-5. Data visualization:
-Objectives
-- understand the overview of categorical and numerical variables
-- understand the relationship between offer accepted customer and each variables
-6. EDA
-- Correlation matrix
-- Apply ChiSquare test:
-in order to determine significant relationship between two categorical variables
-- understand the data distribusion of numerical variables
-7. Data processing and feature engineering
-- apply boxcox transformation
-- remove outliers
-8. Train/test split, standardize and encoding
-- Extract the target variable 'Offer accepted'
-- Train/test split
-- standardize the numerical variables
-- encode the categorical variables
-9. Scaling the imbalanced data 
-- use smote metrix to fix the imbalanced data
-10. Model evaluation and results
-- Logistic regression
-- KNN Classifier
-
+Please refer to the jupyternote book.
 
 ### Findings from data visualization:
 1. Findings in categorical columns
@@ -186,19 +149,7 @@ In addition, customers who receives the offer invitation via postcards are more 
 
 
 ## Libraries
-- [pandas](https://pandas.pydata.org/)
-- [numpy](https://numpy.org/)
-- [warnings](https://docs.python.org/3/library/warnings.html)
-- [matplotlib.pyplot](https://matplotlib.org/stable/contents.html)
-- [seaborn](https://seaborn.pydata.org/)
-- [scipy.stats chi2_contingency](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.chi2.html)
-- [scipy.stats stats](https://docs.scipy.org/doc/scipy/reference/stats.html)
-- [imblearn.over_sampling SMOTE](https://imbalanced-learn.org/stable/)
-- [sklearn.model_selection train_test_split](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
-- [sklearn.linear_model LogisticRegression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegressionCV.html)
-- [sklearn.metrics confusion_matrix](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html)
-- [sklearn.preprocessing StandardScaler](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
-- [sklearn.neighbors KNeighborsClassifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
-- [sklearn metrics](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.accuracy_score.html)
-- [sklearn.preprocessing OneHotEncoder](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html)
-- [sklearn.metrics classification_report](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.classification_report.html)
+- [Pandas](https://pandas.pydata.org/)
+- [Matplotlib](https://matplotlib.org/stable/contents.html)
+- [Seaborn](https://seaborn.pydata.org/)
+- [Sklearn](https://scikit-learn.org/stable/)

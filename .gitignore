@@ -127,3 +127,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# unshown below files
+mid-bootcamp-project, final-Copy1.ipynb
+
