@@ -21,6 +21,9 @@ from credit_card_data;
 ALTER TABLE credit_card_data
 DROP COLUMN q4_balance;
 
+SELECT * FROM credit_card_data
+LIMIT 10;
+
 -- 6. Use sql query to find how many rows of data you have.
 SELECT count(customer_number)
 FROM credit_card_data;
